@@ -39,7 +39,7 @@ const Navbar = () => {
           onClick={() => {
             scrollTo(0, 0); setIsOpen(false);
           }}
-          to="/"
+          to="/movies"
         >
           Movies
         </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
           onClick={() => {
             scrollTo(0, 0); setIsOpen(false);
           }}
-          to="/"
+          to="/favorite"
         >
           Favorites
         </Link>

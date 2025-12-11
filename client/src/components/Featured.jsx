@@ -2,6 +2,8 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import BlurCircle from './BlurCircle';
 import { ArrowRight } from 'lucide-react';
+import { dummyShowsData } from '../assets/assets';
+import MovieCard from './MovieCard';
 
 const Featured = () => {
   const navigate = useNavigate();
@@ -16,7 +18,11 @@ const Featured = () => {
         <ArrowRight className='group-hover:translate-x-0.5 transition w-4.5 h-4.5'/>
       </button>
       </div>
-      <div></div>
+      <div className='flex flex-wrap max-sm:justify-center gap-8 mt-8'>
+        {dummyShowsData.slice(0,4).map((show)=>(
+          <MovieCard key={show._id} movie={show}/>
+        ))}
+      </div>
       <div className='flex justify-center mt-20'>
         <button onClick={()=> {navigate("/movies"); scrollTo(0,0)}} className='px-10 py-3 text-sm bg-primary hover:bg-primary-two transition rounded-md font-medium cursor-pointer'>
           Show more
