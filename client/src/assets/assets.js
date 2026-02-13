@@ -3,13 +3,15 @@ import Disney from "./Disney.svg";
 import googlePlay from "./googlePlay.svg";
 import appStore from "./appStore.svg";
 import screenImage from "./screenImage.svg";
+import profile from "./profile.png";
 
 export const assets = {
   logo,
   Disney,
   googlePlay,
   appStore,
-  screenImage
+  screenImage,
+  profile
 };
 
 export const dummyTrailers = [
